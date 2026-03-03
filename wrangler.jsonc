@@ -1,0 +1,23 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "tanstack-starter-project",
+  "compatibility_date": "2025-09-24",
+  "compatibility_flags": ["nodejs_compat"],
+  "main": "@tanstack/react-start/server-entry",
+  "vars": {
+    "MY_VAR": "Hello from Cloudflare ;))))",
+  }, 
+  //
+  "env": {
+    "staging": {
+      "vars": {
+        "SOME_VAR_STAGING": "staging.example.com",
+      },
+    },
+    "production": {
+      "vars": {
+        "SOME_VAR_PROD": "production.example.com",
+      },
+    },
+  },
+}
